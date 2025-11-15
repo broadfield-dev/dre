@@ -1,7 +1,7 @@
 from pathlib import Path
 import sys
 def mod_dep(file_path=".",orig_str="",mod_str=""):
-  file_path =file_path
+  file_path = Path(file_path)
   
   try:
       file_content = file_path.read_text()
